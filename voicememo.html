@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ボイスTodo管理(改)
+    </title>
+    <script src="googleSheets.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <section class="main">
+        <div class="container">
+          <h1>TodoApp</h1>
+          <h2>タスクを追加してみよう</h2>
+          <div class="description">
+            <ol>
+              <li>マイクをクリックする</li>
+              <li>声で入れた内容がタスクの内容になる</li>
+              <li>カテゴリを選ぶ場合はボタンで選択</li>
+            </ol>
+          </div>
+          <p class="center-box"><img id="mic" src="micoff.svg" /></p>
+          <p id="result-div" class="large-text"></p>
+          <button id="mybtn">カテゴリを選ぶ</button>
+          <select id="contents"></select>
+          <form>
+            <input type="text" name="naiyou" id="naiyou">
+            <button>送信</button>
+          </form>
+
+          <button onclick="location.href='index.html'">ホームへ戻る</button>
+          <button onclick="location.href='send.html'">一覧を見る</button>
+        </div>
+      </section>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>	
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+      <script src="main.js"></script>
+      <script
+        async
+        defer
+        src="https://apis.google.com/js/api.js"
+        onload="handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"
+      ></script>
+  </body>
+</html>

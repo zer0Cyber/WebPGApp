@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.main {
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #f00;
+  height: auto;
+}
+
+.main h2 {
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  padding: 5px 0;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  color: #fff;
+}
+
+button {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.center-box {
+  text-align: center;
+}
+
+#result-div {
+  color: #fff;
+}
+
+#mic {
+  width: 200px;
+  height: 200px;
+}
+
+.description {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.done-task {
+  color: lightgray;
+}
+
+#contents {
+  display: none;
+  text-align: center;
+}

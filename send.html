@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ボイスTodo管理(改)</title>
+  <script src="googleSheets.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="main">
+    <div class="container">
+      <h1>TodoApp</h1>
+      <ul id="taskList"></ul>
+      <button onclick="location.href='index.html'">ホームへ戻る</button>
+      <button onclick="location.href='voicememo.html'">タスクの入力へ戻る</button>
+    </div>
+  </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>	
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+  <script src="send.js"></script>
+  <script
+  async
+  defer
+  src="https://apis.google.com/js/api.js"
+  onload="handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()"
+></script>
+</body>
+</html>
